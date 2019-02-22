@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/available_recycler_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/total_coupons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Total"
+            android:textAlignment="center"
+            android:textSize="@dimen/dp_24"
+            android:textStyle="bold"
+            android:background="@color/infoColor"
+            android:textAllCaps="true"
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/available_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
