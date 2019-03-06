@@ -11,10 +11,12 @@ import com.example.androidinterviewproject.ui.adapters.RecyclerViewAdapter
 import com.example.androidinterviewproject.ui.fragments.AvailableFragment
 import com.google.gson.Gson
 import java.io.IOException
+import java.io.InputStream
 import java.nio.charset.Charset
 import java.util.*
 import javax.inject.Inject
- class ViewPagerFragmentPresenter @Inject constructor(context: Context?) : BasePresenter<ViewPagerFragmentView>() {
+
+class ViewPagerFragmentPresenter @Inject constructor(context: Context?) : BasePresenter<ViewPagerFragmentView>() {
 
     var context: Context? = context
 
