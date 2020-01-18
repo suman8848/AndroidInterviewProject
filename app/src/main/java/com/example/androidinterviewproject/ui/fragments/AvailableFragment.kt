@@ -4,11 +4,11 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.TextView
+import androidx.annotation.RequiresApi
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.androidinterviewproject.R
 import com.example.androidinterviewproject.base.BaseFragment
 import com.example.androidinterviewproject.di.components.DaggerViewPagerFragmentComponents
@@ -42,7 +42,7 @@ import kotlin.collections.ArrayList
         return R.layout.available_fragment
     }
 
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is SendMessage) {
             mListener = context

@@ -2,15 +2,14 @@ package com.example.androidinterviewproject.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.TextView
 import com.example.androidinterviewproject.R
 import com.example.androidinterviewproject.base.BaseFragment
 import com.example.androidinterviewproject.ui.adapters.RecyclerViewAdapter
-import android.R.attr.key
 import android.content.Context
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.androidinterviewproject.mvp.model.ListOfCoupons
 
 
@@ -25,7 +24,7 @@ class ClippedFragment : BaseFragment, AvailableFragment.SendMessage {
 
     constructor() {}
 
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is AvailableFragment.SendMessage) {
             mListener = context

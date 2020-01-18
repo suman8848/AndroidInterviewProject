@@ -1,24 +1,19 @@
 package com.example.androidinterviewproject.ui.adapters;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
-import android.text.Html;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.example.androidinterviewproject.R;
-import com.example.androidinterviewproject.mvp.model.Coupon;
 import com.example.androidinterviewproject.mvp.model.ListOfCoupons;
 import com.squareup.picasso.Picasso;
 
@@ -68,8 +63,7 @@ public class RecyclerViewAdapter
 
 //            Render image using Picasso library
         if (feedItem.getImageURL() != null) {
-            Picasso.with(mContext)
-                    .load(feedItem.getImageURL())
+            Picasso.get().load(feedItem.getImageURL())
                     .error(R.drawable.ic_launcher_background)
                     .placeholder(R.drawable.ic_launcher_background)
                     .into(customViewHolder.imageView);

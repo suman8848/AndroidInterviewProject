@@ -1,8 +1,6 @@
 package com.example.androidinterviewproject.di.modules
 
 import android.content.Context
-import android.support.annotation.NonNull
-import android.support.annotation.Nullable
 import dagger.Module
 import dagger.Provides
 import org.jetbrains.annotations.NotNull

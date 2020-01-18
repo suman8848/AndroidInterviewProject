@@ -1,6 +1,6 @@
 package com.example.androidinterviewproject.base
 
-import android.support.annotation.VisibleForTesting
+import androidx.annotation.VisibleForTesting
 import com.example.androidinterviewproject.mvp.view.BaseView
 import javax.inject.Inject
 
